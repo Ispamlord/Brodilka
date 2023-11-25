@@ -10,6 +10,7 @@ namespace Laba2222
     {
         static void Main(string[] args)
         {
+            Enemy enemy = new Enemy();
         }
     }
 }
