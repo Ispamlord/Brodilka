@@ -6,16 +6,29 @@ using System.Threading.Tasks;
 
 namespace Laba2222
 {
-    internal class Pole
+    public class Pole
     {
-        private bool LEvel{ set; get; }
-        private int hight { get; }
-        private int weight { get; }
+        static public bool LEvel{ set; get; }
+        public int Hight { get; }
+        public int Weight { get; }
+        public int maxCreep { get; }
+        public Pole(int hight, int weight, int MaxCreep)
+        {
+            Hight = hight;
+            Weight = weight;
+            maxCreep = MaxCreep;
+        }
         public void ProverkaLevel()
         {
-            Enemy enemy1 = new Enemy();
             
-            if ()
+            if (Enemy.cout == 0)
+            {
+                
+
+            }
+
         }
+        
+
     }
 }

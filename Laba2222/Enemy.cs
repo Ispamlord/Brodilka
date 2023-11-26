@@ -9,21 +9,42 @@ namespace Laba2222
 {
     public class Enemy
     {
-        private int damage { get; }
-        private int HP { get; }
-        private int range { get; }
-        private int speedX { set; get; }
-        private int speedY { set; get; }
-        private int X { set; get; }
-        private int Y { set; get; }
-        static int cout { get; set; }
+        public int damage { get; }
+        public int HP { get; }
+        public int Range { get; }
+        public int speedX { set; get; }
+        public int speedY { set; get; }
+        public int X { set; get; }
+        public int Y { set; get; }
+        static int cout { get;}
+        public Enemy();
+        
+        public Enemy(int dmg, int hp, int range, int speedx, int speedy, int x, int y)
+        {
+            damage=dmg;
+            HP=hp;
+            Range=range;
+            speedX=speedx;
+            speedY=speedy;
+            X=x;
+            Y=y;
+            cout++;
+        }
+        public void Dead()
+        {
+            if (HP <= 0)
+            {
+                cout--;
+            }
+        }
+
     }
     
     
 
-    public class warrior
+    public class warrior:Enemy
     {
-
+        
     }
     public class archer
     {
